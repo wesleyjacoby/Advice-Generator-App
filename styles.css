@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+/* font-family: 'Manrope', sans-serif; */
+
+:root {
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+    --gray-blue: hsl(217, 19%, 38%);
+    --dark-gray-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0px 16px 0px 16px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    color: var(--light-cyan);
+    line-height: 33px;
+    background-color: var(--dark-blue);
+}
+
+.main-container {
+    position: relative;
+    max-width: 540px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--dark-gray-blue);
+    box-shadow: 30px 50px 80px rgba(0, 0, 0, 0.100202);
+    border-radius: 10px;
+}
+
+.advice-container {
+    margin-top: 40px;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 3.5px;
+    color: var(--neon-green);
+    margin-bottom: 24px;
+}
+
+.quote-container {
+    text-align: center;
+    margin: 0px 24px 24px 24px;
+}
+
+.desktop-divider {
+    display: none;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: var(--neon-green);
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 40px #53FFAA;
+}
+
+.button-container {
+    transform: translateY(50%);
+}
+
+.dice {
+    width: 130%;
+    padding: 20px;
+}
+
+/* --MEDIA QUERIES-- */
+
+@media screen and (min-width: 540px) {
+    body {
+        margin: 0px
+    }
+
+    .advice-container {
+        margin-top: 48px;
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: 4.1px;
+    }
+
+    .quote-container {
+        text-align: center;
+        font-size: 28px;
+        line-height: 38px;
+        letter-spacing: -0.3px;
+        margin: 0px 48px 40px 48px;
+    }
+
+    .pattern-divider {
+        margin-bottom: 8px;
+    }
+
+    .mobile-divider {
+        display: none;
+    }
+
+    .desktop-divider {
+        display: block;
+    }
+}
